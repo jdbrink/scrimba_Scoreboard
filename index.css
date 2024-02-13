@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    background: #1B244A;
+    max-height: 400px;
+    max-width: 525px;
+}
+
+@font-face {
+    font-family: timerFont;
+    src: url("fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+.bluebox {
+    border: 1px dotted blue;
+}
+.quarter {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    background: #1B244A;
+    margin: 20px;
+}
+
+#quarters {
+    display: flex;
+    justify-content: center;
+    color:#EEEEEE;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.qtr-header {
+    color: #EEEEEE;
+    text-align: center;
+    margin-bottom: 0;
+}
+.qtr-text {
+    margin: auto 0 auto 0;
+}
+
+#timer {
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    margin-top: 6px;
+    margin-right: 20px;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 20px;
+    color: #FA7700;
+    
+}
+#timer-text {
+    align-content: center;
+}
+#timer-buttons {
+    display: flex;
+    flex-direction: column;
+    margin:  auto 10px;
+    height: 133px;
+}
+#start-button{
+    background: green;
+    width: 75px;
+    margin-top: 5px;
+    text-shadow: 0 0 2px #9AABD8;
+    padding: auto;
+    
+}
+#stop-button{
+    background: darkred;
+    width: 75px;
+    margin-top: 10px;
+    text-shadow: 0 0 2px #9AABD8;
+    padding: auto;
+    
+}
+#reset-timer-button {
+    background: yellow;
+    width: 75px;
+    margin-top: 10px;
+    text-shadow: 0 0 2px #9AABD8;
+    padding: auto;
+}
+
+.timercontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    margin-top: 68px;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+button {
+    background: #1B244A;
+    color: #9AABD8;
+    font-family: timerFont;
+    border: 1px solid #9AABD8; 
+    border-radius: 5px;
+    font-size: 18px;
+    height: 45px;
+    width: 45px;
+}
+
+h3 {
+    text-align: center;
+    color: #EEEEEE;
+    
+}
+
+.controls {
+    display: flex;
+    margin-top: 20px;
+    justify-content:space-around;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    height: 120px;
+    background: #080001;
+    font-family: timerFont, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 90px;
+    color: #F94F6D;
+    margin: 6px auto;
+    
+}
+
+#reset-btn {
+    display: block;
+    margin: 10px auto;
+    width: auto
+}
+
+#final {
+    margin-top: 0;
+    width:fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    font-size: 30px
+}

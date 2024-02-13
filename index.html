@@ -1,0 +1,54 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+             <! ==================== Timer Section =================== !>
+       
+            <h3 id="timer-text">TIMER</h3>
+                <div class="timercontainer">
+                    <p id="timer" class="score">15:00</p>
+                    <div id="timer-buttons">
+                        <button id="start-button" onclick="startTimer()">START</button>
+                        <button id="stop-button" onclick="stopTimer()">STOP</button>
+                        <button id="reset-timer-button" onclick="resetTimer()">RESET</button>
+                    </div>
+                </div> <! timer container !>
+            <! ==================== Quarters Section =================== !>
+            <p class="qtr-header" >Quarter</p>
+            <div id="quarters">
+                <span class="qtr-text">1</span>
+                <div id="quarter1" class="quarter"> </div>
+                <span class="qtr-text">2</span>
+                <div id="quarter2" class="quarter"> </div>
+                <span class="qtr-text">3</span>
+                <div id="quarter3" class="quarter"> </div>
+                <span class="qtr-text">4</span>
+                <div id="quarter4" class="quarter"> </div>
+            </div>
+            <! ==================== Score Section =================== !>
+            <h3 id="final"> </h3>
+            <div class="container">
+            <div>
+                <h3 >HOME</h3>
+                <h2 id="home-score" class="score">0</h2>
+                    <div class="controls">
+                        <button id="guest1" onclick="add1ToHome()">+1</button>
+                        <button id="guest3" onclick="add2ToHome()">+2</button>
+                        <button id="guest3" onclick="add3ToHome()">+3</button>
+                    </div>
+            </div>
+            <div>
+                <h3 >GUEST</h3>
+                <h2 id="guest-score" class="score" class="bluebox">0</h2>
+                    <div class="controls">
+                        <button id="guest1" onclick="add1ToGuest()">+1</button>
+                        <button id="guest3" onclick="add2ToGuest()">+2</button>
+                        <button id="guest3" onclick="add3ToGuest()">+3</button>
+                    </div>
+            </div>
+        </div>
+        <button onclick="reset()" id="reset-btn">RESET</button>
+        <script src="index.js"></script>
+    </body>
+</html>
